@@ -16,8 +16,7 @@ export default function Home() {
     w-2xl
     drop-shadow-7xl
     mt-24
-    font-sans
-    "
+    font-sans"
 >
   PUSHTI
 </h1>        <p className="mt-4 text-lg text-white-500 w-1/2 font-bold rounded-lg">
