@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       {/* Feature/Value Proposition Section */}
-      <section className="grid gap-8 mt-16 text-center sm:grid-cols-2 lg:grid-cols-2">
+      <section className="hidden md:grid gap-8 mt-16 text-center sm:grid-cols-2 lg:grid-cols-2">
         <div className="p-6 bg-gray-100 rounded-lg ">
           <h2 className="text-2xl font-semibold text-green-400">Are you meeting your protein need?</h2>
           <p className="mt-2 text-black">
