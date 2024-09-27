@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center mt-12">
       <h1
-  className="text-8xl font-bold text-pink-600
+  className="text-5xl sm:text-6xl md:text-8xl font-bold text-pink-600
     mb-4
      bg-opacity-50
     w-2xl
@@ -20,9 +20,7 @@ export default function Home() {
     mt-24
     font-sans"
 >PUSHTI</h1>        
-<p className="mt-4 text-lg text-white-500 w-1/2 font-bold rounded-lg">
-          Wholesome high protein food, that enables you meet your daily protein intake requirement.
-          Our mission is to change the protein narrative of India one bowl at a time.</p>
+
         
       </section>
 
