@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.background-container {
+  height: 100vh; /* Full height for viewport */
+  width: 120vw; /* Full width for viewport */
+  background-image: url('/Pushti.png'); /* Reference to your image in the public folder */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+/* Optional: Additional styling for content */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure the content is centered */
+  color: white; /* Example text color */
+  text-align: center;
+}
