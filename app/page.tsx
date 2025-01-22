@@ -1,70 +1,137 @@
-
-//@ts-nocheck
-import Image from 'next/image';
+// pages/index.js
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen bg-white">
-      <div className="background-container">
-      <div className="content">
+    <div>
+      <Head>
+        <title>Pushti - Protein Rich Food</title>
+        <meta name="description" content="Pushti - Protein Rich Food Menu" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+      </Head>
 
+{/* Updated Header */}
+<header className="bg-success text-green text-center py-4">
+        <h1>Pushti - Protein Rich Food</h1>
+        <p>New BEL Road, Below Cult Gym, Bengaluru | +91 7975021725</p>
+      </header>
 
-      {/* Hero Section */}
-      <section className="flex flex-col items-center text-center mt-12">
-      <h1
-  className="text-5xl sm:text-6xl md:text-8xl font-bold text-pink-600
-    mb-4
-     bg-opacity-50
-    w-2xl
-    drop-shadow-7xl
-    mt-24
-    font-sans"
->PUSHTI</h1>        
-<p className="mt-4 text-lg text-white-500 w-1/2 font-bold rounded-lg">
-          Wholesome high protein food, that enables you meet your daily protein intake requirement.
-          Our mission is to change the protein narrative of India one bowl at a time.</p>
-        
-      </section>
+      <main className="container my-5">
+        {/* Protein Bowls */}
+        <section>
+          <h2 className="text-center text-danger mb-4">Protein Bowls</h2>
+          <div className="row gy-4">
+            <div className="col-md-6">
+              <h5>1. Sprouted Black Chana & Green Gram</h5>
+              <p>
+                (25g Protein, 425 kcal) <strong >₹135</strong>
+              </p>
+              <p>
+                Black Chana Sprouts, Green Gram Sprouts, Paneer or Tofu, Mixed
+                Vegetables and Lemon juice dressing
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h5>2. Rajma & Chickpea Bowl</h5>
+              <p>
+                (22g Protein, 378 kcal) <strong>₹135</strong>
+              </p>
+              <p>
+                Boiled Rajma (Kidney Beans), Boiled Chickpea (Kabuli Chana),
+                Paneer or Tofu, Mixed Vegetable and Lemon juice dressing
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h5>3. Soybean Salad Bowl</h5>
+              <p>
+                (34g Protein, 406 kcal) <strong>₹120</strong>
+              </p>
+              <p>
+                Boiled Soybean, Sprouted Green Gram, Roasted Peanuts, Mixed
+                Vegetables and Lemon juice dressing
+              </p>
+            </div>
+            <div className="col-md-6">
+              <h5>4. Soya Chunks Salad</h5>
+              <p>
+                (37g Protein, 327 kcal) <strong>₹130</strong>
+              </p>
+              <p>
+                Marinated Soya Chunks with Indian spices and cashew gravy,
+                Chickpea, Mixed Vegetables and Yoghurt Dressing
+              </p>
+            </div>
+          </div>
+        </section>
 
-      {/* Feature/Value Proposition Section */}
-      <section className="hidden md:grid gap-8 mt-16 text-center sm:grid-cols-2 lg:grid-cols-2">
-        <div className="p-6 bg-gray-100 rounded-lg ">
-          <h2 className="text-2xl font-semibold text-green-400">Are you meeting your protein need?</h2>
-          <p className="mt-2 text-black">
-            Get 0.8x - 1.5x (gms per body weight in kg) of protein from natural food sources 
-          </p>
-        </div>
-        <div className="p-6 bg-gray-100 rounded-lg">
-          <h2 className="text-2xl font-semibold text-green-400">Non Packaged, Non Processed, No Oil</h2>
-          <p className="mt-2 text-black">
-            We use whole foods that are locally sourced and in measured quantities, with every bowl served, so you know your protein and calorie intake
-          </p>
-        </div>
-        <div className="p-6 bg-gray-100 rounded-lg">
-          <h2 className="text-2xl font-semibold text-green-400">Here to be your post work out partner</h2>
-          <p className="mt-2 text-black">
-            Did you know? It is essential to hydrate yourself and consume a nutritious meal within the first 20 minutes of your workout
-          </p>
-        </div>
-        <div className="p-3 bg-gray-100 rounded-lg">
-          <h2 className="text-2xl font-semibold text-green-400">Coming Soon...</h2>
-          <p className="mt-2 text-black">
-            On Swiggy, Zomato and a store near your gym
-          </p>
-        </div>
-      </section>
+        {/* Protein Drinks */}
+        <section className="mt-5">
+          <h2 className="text-center text-danger mb-4">Protein Drinks</h2>
+          <div className="row gy-4">
+            <div className="col-md-6">
+              <h5>1. Sattu Buttermilk</h5>
+              <p>
+                (11g Protein, 138 kcal) <strong>₹75</strong>
+              </p>
+              <p>Sattu, Curd, Fresh Mint Leaves</p>
+            </div>
+            <div className="col-md-6">
+              <h5>2. Banana & Dates Milkshake with Sattu</h5>
+              <p>
+                (12g Protein, 190 kcal) <strong>₹85</strong>
+              </p>
+              <p>Sattu, Milk, Banana, Dates, Cardamom</p>
+            </div>
+          </div>
+        </section>
 
-      {/* Call to Action Section */}
-      <section className="mt-16 text-center">
-        
-      </section>
+        {/* Freedom of Choice */}
+        <section className="mt-5">
+          <h2 className="text-center text-danger mb-4">Freedom of Choice</h2>
+          <ul>
+            <li>Make-Your-Own Bowl</li>
+            <li>The Protein Combo</li>
+            <li>Mini Protein Bowl</li>
+            <li>The Perfect Meal (35g Protein, 510 kcal)</li>
+          </ul>
+        </section>
 
-      {/* Footer */}
-      <footer className="position-fixed mt-auto p-6 text-center text-gray-500">
-        <p>&copy; 2024 Pushti. All rights reserved.</p>
+        {/* Add-Ons */}
+        <section className="mt-5">
+          <h2 className="text-center text-danger mb-4">Add-Ons</h2>
+          <ul>
+            <li>Yoghurt - ₹15</li>
+            <li>Paneer - ₹15</li>
+            <li>Tofu - ₹15</li>
+            <li>Veggies - ₹15</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer className="bg-dark text-white text-center py-3">
+        <p>
+          Visit us:{" "}
+          <a href="http://www.pushti.life" target="_blank" className="text-danger">
+            www.pushti.life
+          </a>
+        </p>
+        <p>
+          Follow us on Instagram:{" "}
+          <a
+            href="https://instagram.com/pushti.life"
+            target="_blank"
+            className="text-danger"
+          >
+            @pushti.life
+          </a>
+        </p>
+        <p>Address: New BEL Road, Below Cult Gym, Bengaluru</p>
+        <p>Phone: +91 7975021725</p>
       </footer>
-      </div>
-      </div>
-    </main>
+    </div>
   );
 }
