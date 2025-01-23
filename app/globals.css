@@ -30,7 +30,7 @@ body {
 .background-container {
   height: 100vh; /* Full height for viewport */
   width: 120vw; /* Full width for viewport */
-  background-image: url('/Pushti.png'); /* Reference to your image in the public folder */
+  background-image: url('../public/Pushti.png'); /* Reference to your image in the public folder */
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -45,4 +45,113 @@ body {
   height: 100vh; /* Make sure the content is centered */
   color: white; /* Example text color */
   text-align: center;
+  
+}
+
+
+
+/* styles/globals.css */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+
+
+header { 
+  background-color: #2ECC71; /* Green color */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+div{
+  margin-top: 50;
+}
+
+header h1 {
+  font-size: 2rem; /* Adjust heading size as needed */
+  margin-bottom: 0.5rem; /* Add some space below heading */
+}
+
+section {
+  margin-top: 10rem; /* Adjust margin as needed */ 
+}
+
+.price {
+  float: right; /* Or use 'text-right' if using Tailwind CSS */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+strong{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+/* Protein Bowls & Drinks Styling */
+.protein-bowl,
+.protein-drink {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.protein-bowl h3,
+.protein-drink h3 {
+  margin-top: 0; /* Remove top margin from titles */
+  color: #eb5766;
+}
+
+h3 + p,
+h3 + p {
+  display: inline-block;
+}
+
+.protein-bowl p strong,
+.protein-drink p strong {
+  font-weight: bold; /* Bold the price */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.freedom-of-choice {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default list padding */
+}
+
+.freedom-of-choice li {
+  margin-bottom: 0.5rem;
+}
+
+.add-ons {
+  list-style: none;
+  padding: 0;
+}
+
+.add-ons li {
+  margin-bottom: 0.5rem;
 }

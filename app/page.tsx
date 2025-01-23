@@ -1,5 +1,6 @@
 // pages/index.js
 import Head from "next/head";
+import './globals.css';
 
 export default function Home() {
   return (
@@ -14,51 +15,51 @@ export default function Home() {
         />
       </Head>
 
-{/* Updated Header */}
-<header className="bg-success text-green text-center py-4">
+      {/* Updated Header */}
+      <header className="bg-success text-green text-center py-4">
         <h1>Pushti - Protein Rich Food</h1>
         <p>New BEL Road, Below Cult Gym, Bengaluru | +91 7975021725</p>
       </header>
 
       <main className="container my-5">
         {/* Protein Bowls */}
-        <section>
-          <h2 className="text-center text-danger mb-4">Protein Bowls</h2>
+        <section className="protein-bowl section-title">
+          <h1 className="text-left text-red-500 text-lg my-4 ">Protein Bowls</h1>
           <div className="row gy-4">
-            <div className="col-md-6">
-              <h5>1. Sprouted Black Chana & Green Gram</h5>
+            <div className="col-lg-6 w-full">
+              <h3 className="mt-4">1. Sprouted Black Chana & Green Gram  <strong className="text-black" >₹135</strong></h3>
               <p>
-                (25g Protein, 425 kcal) <strong >₹135</strong>
+                (25g Protein, 425 kcal)
               </p>
               <p>
                 Black Chana Sprouts, Green Gram Sprouts, Paneer or Tofu, Mixed
                 Vegetables and Lemon juice dressing
               </p>
             </div>
-            <div className="col-md-6">
-              <h5>2. Rajma & Chickpea Bowl</h5>
+            <div className="col-md-6 mt-4">
+              <h3 className="mt-4">2. Rajma & Chickpea Bowl <strong className="text-black">₹135</strong></h3>
               <p>
-                (22g Protein, 378 kcal) <strong>₹135</strong>
+                (22g Protein, 378 kcal) 
               </p>
               <p>
                 Boiled Rajma (Kidney Beans), Boiled Chickpea (Kabuli Chana),
                 Paneer or Tofu, Mixed Vegetable and Lemon juice dressing
               </p>
             </div>
-            <div className="col-md-6">
-              <h5>3. Soybean Salad Bowl</h5>
+            <div className="col-md-6 mt-4">
+              <h3 className="mt-4">3. Soybean Salad Bowl <strong className="text-black">₹120</strong></h3>
               <p>
-                (34g Protein, 406 kcal) <strong>₹120</strong>
+                (34g Protein, 406 kcal) 
               </p>
               <p>
                 Boiled Soybean, Sprouted Green Gram, Roasted Peanuts, Mixed
                 Vegetables and Lemon juice dressing
               </p>
             </div>
-            <div className="col-md-6">
-              <h5>4. Soya Chunks Salad</h5>
+            <div className="col-md-6 mt-4">
+              <h3 className="mt-4">4. Soya Chunks Salad <strong className="text-black">₹130</strong></h3>
               <p>
-                (37g Protein, 327 kcal) <strong>₹130</strong>
+                (37g Protein, 327 kcal) 
               </p>
               <p>
                 Marinated Soya Chunks with Indian spices and cashew gravy,
@@ -69,15 +70,15 @@ export default function Home() {
         </section>
 
         {/* Protein Drinks */}
-        <section className="mt-5">
-          <h2 className="text-center text-danger mb-4">Protein Drinks</h2>
+        <section className="mt-5 protein-drink section-title">
+          <h1 className="text-left text-lg text-red-500 text-danger mb-4">Protein Drinks</h1>
           <div className="row gy-4">
             <div className="col-md-6">
               <h5>1. Sattu Buttermilk</h5>
               <p>
                 (11g Protein, 138 kcal) <strong>₹75</strong>
               </p>
-              <p>Sattu, Curd, Fresh Mint Leaves</p>
+              <p>Sattu, Curd, Fresh Mint </p>
             </div>
             <div className="col-md-6">
               <h5>2. Banana & Dates Milkshake with Sattu</h5>
@@ -91,23 +92,30 @@ export default function Home() {
 
         {/* Freedom of Choice */}
         <section className="mt-5">
-          <h2 className="text-center text-danger mb-4">Freedom of Choice</h2>
-          <ul>
-            <li>Make-Your-Own Bowl</li>
-            <li>The Protein Combo</li>
-            <li>Mini Protein Bowl</li>
-            <li>The Perfect Meal (35g Protein, 510 kcal)</li>
-          </ul>
+          <h2 className="text-left text-lg text-red-500 mb-4 section-title">Freedom of Choice</h2>
+          <div className="row gy-4">
+            <div className="col-md-6">
+              <h5>1. Sprouted Black Chana & Green Gram</h5>
+              <p>
+                (25g Protein, 425 kcal)
+                <span className="price">₹135</span>
+              </p>
+              <p>
+                Black Chana Sprouts, Green Gram Sprouts, Paneer or Tofu, Mixed
+                Vegetables and Lemon juice dressing
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Add-Ons */}
-        <section className="mt-5">
-          <h2 className="text-center text-danger mb-4">Add-Ons</h2>
-          <ul>
-            <li>Yoghurt - ₹15</li>
-            <li>Paneer - ₹15</li>
-            <li>Tofu - ₹15</li>
-            <li>Veggies - ₹15</li>
+        <section className="mt-5 section-title">
+          <h2 className="text-left text-lg text-red-500 mb-4">Add-Ons</h2>
+          <ul className="grid grid-cols-2 gap-1 add-ons">
+            <li>1. Yoghurt</li>
+            <li>2. Paneer</li>
+            <li>3. Tofu</li>
+            <li>4. Veggies</li>
           </ul>
         </section>
       </main>
@@ -135,3 +143,5 @@ export default function Home() {
     </div>
   );
 }
+
+
