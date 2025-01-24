@@ -1,5 +1,5 @@
 // pages/index.js
-
+//@ts-nocheck
 
 import Head from "next/head";
 import './globals.css';
