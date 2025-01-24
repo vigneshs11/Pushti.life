@@ -5,7 +5,7 @@ const MenuItem = ({ itemName, price = '', proteinContent = false, calories =fals
     <div className="col-lg-4 w-full">
   <div className="flex items-center justify-between">
     <h2 className="mt-4 text-orange-700 font-bold">{itemName}</h2>
-    {price && <span className="text-black font-bold">₹ {price}</span>}
+    {price && <span className="text-black font-bold text-wrap">₹ {price}</span>}
   </div>
   { calories && <p className="text-cyan-700">
     ({proteinContent}g Protein, {calories} kcal)
