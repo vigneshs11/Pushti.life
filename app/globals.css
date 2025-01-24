@@ -60,7 +60,7 @@ body {
 
 
 header { 
-  background-color: #2ECC71; /* Green color */
+  background-color: #085a2a; /* Green color */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -81,6 +81,7 @@ header h1 {
 
 section {
   margin-top: 10rem; /* Adjust margin as needed */ 
+  border-bottom: 3px solid #ccc; 
 }
 
 .price {
@@ -154,4 +155,11 @@ h3 + p {
 
 .add-ons li {
   margin-bottom: 0.5rem;
+}
+
+.bg-image {
+  background-image: url('/images/background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh; 
 }
