@@ -50,4 +50,3 @@ export const Carousel = () => {
   );
 };
 
-export const useClient = true;
