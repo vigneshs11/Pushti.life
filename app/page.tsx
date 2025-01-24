@@ -33,20 +33,20 @@ export default function Home() {
         <section className="protein-bowl section-title">
           <h1 className="text-3xl font-bold text-green-700">Protein Bowls</h1>
           <div className="gy-4">
-          {menuItemsData.map(item => <MenuItem {...item}/>)}
+          {menuItemsData.map(item => <MenuItem  key={item.itemName} {...item}/>)}
           </div>
         </section>
 
         {/* Protein Drinks */}
         <section className="mt-5 protein-drink section-title">
           <h1 className="text-2xl font-bold text-green-700">Protein Drinks</h1>
-          {ProteinDrinks.map(item => <MenuItem {...item}/>)}
+          {ProteinDrinks.map(item => <MenuItem  key={item.itemName} {...item}/>)}
         </section>
 
         {/* Freedom of Choice */}
         <section className="mt-5 protein-drink section-title">
           <h2 className="text-2xl font-bold text-green-700">Freedom of Choice</h2>
-          {specialOffers.map(item => <MenuItem {...item}/>)}
+          {specialOffers.map(item => <MenuItem key={item.itemName} {...item}/>)}
         </section>
 
         {/* Add-Ons */}
