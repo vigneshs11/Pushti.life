@@ -88,4 +88,3 @@ export default function Home() {
 }
 
 
-export const useClient = true;
